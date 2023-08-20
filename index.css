@@ -1,4 +1,9 @@
-.QandA h6 {
+.QandA {
+  background-color: #f7f9fc;
+}
+.QandA h6,
+.projects h6,
+.clients h6 {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -38,4 +43,70 @@
 }
 .rightGrid #contentDown {
   cursor: default;
+}
+.projects .nav {
+  justify-content: center;
+}
+.projects .nav li {
+  width: 33.333%;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+  width: 33.333%;
+  text-align: center;
+}
+.projects .nav-pills .nav-link,
+.projects .nav-pills .show > .nav-link {
+  color: #2c3038;
+  background: #fff;
+  border-bottom: 3px #f8f9fa solid;
+  border-radius: 0;
+}
+
+.projects .nav-pills .nav-link.active,
+.projects .nav-pills .show > .nav-link {
+  border-bottom: 3px #dc4f72 solid;
+  color: #dc4f72;
+  border-radius: 0;
+  background-color: #fff;
+}
+.projects .tab-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+.projects .tab-content h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #2c3038;
+}
+.projects .tab-content p {
+  font-size: 16px;
+  line-height: 24.5px;
+  color: #5a5a5a;
+}
+.projects .tab-content button {
+  line-height: 52px;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 30px;
+  color: #dc4f72;
+  border-color: #dc4f72;
+  transition: all 0.5s;
+}
+.projects .tab-content button:hover {
+  color: #fff;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+}
+.clients {
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.77)),
+    url(./img/b2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
