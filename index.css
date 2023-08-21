@@ -16,6 +16,10 @@
 .leftGrid img {
   width: 100%;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.leftGrid img:hover {
+  transform: translateY(-10px);
 }
 .rightGrid ul li {
   position: relative;
@@ -75,6 +79,10 @@
 .projects .tab-content img {
   width: 100%;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.projects .tab-content img:hover {
+  transform: translateY(-10px);
 }
 .projects .tab-content h3 {
   font-size: 30px;
@@ -191,4 +199,74 @@
   color: #2c3038;
   font-weight: 600;
   border-radius: 6px;
+}
+.footer .copyright {
+  line-height: 22px;
+  color: #5a5a5a;
+  font-size: 16px;
+}
+.footer .copyright a {
+  color: #5a5a5a;
+  transition: all 0.5s;
+}
+.footer .copyright a:hover {
+  color: #dc4f72;
+}
+.footer .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .social li a {
+  color: #2c3038;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+}
+.footer .social li i {
+  transition: all 0.5s;
+}
+.footer .social li i:hover {
+  color: #dc4f72;
+}
+.rightBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 320px;
+  margin: 0;
+  position: fixed;
+  top: 140px;
+  right: 0;
+  z-index: 10;
+  background: #0d1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  padding: 40px 5px 10px;
+}
+.rightBar a {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 52px;
+  color: #e6ebff;
+  text-decoration: none;
+  line-height: 24px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+  text-align: center;
+  transition: all 0.5s;
+}
+.rightBar .rightBar__bottom {
+  border-top: 1px solid #41414d;
+  padding-top: 30px;
+}
+.rightBar .rightBar__bottom a:hover {
+  opacity: 1;
+  color: #fff;
 }
