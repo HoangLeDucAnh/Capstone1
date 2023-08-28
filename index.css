@@ -452,6 +452,15 @@ nav{
   right: 25px;
   top: 16px;
   margin-top: 16px;
+  transition: all 0.25s ease-in-out;
+}
+.rollDown {
+  animation: rollDown 0.5s ease-in-out 1 forwards;
+}
+@keyframes rollDown {
+  to {
+    transform: rotate(180deg);
+  }
 }
 .rightGrid #contentDown {
   cursor: default;

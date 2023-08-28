@@ -819,6 +819,14 @@
         time: 1500,
         delay: 50,
       });
+    <script>
+      var isClicked = false;
+      var Nhap = document.querySelector("#demo");
+      var themClass = document.querySelector("#test");
+      Nhap.onclick = function changeVal() {
+        isClicked = !isClicked;
+        themClass.classList.toggle("active", isClicked);
+      };
     </script>
   </body>
 </html>
