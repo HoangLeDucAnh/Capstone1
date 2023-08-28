@@ -424,7 +424,10 @@ nav{
 .leftGrid img {
   width: 100%;
   border-radius: 10px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.leftGrid img:hover {
+  transform: translateY(-10px);
 }
 .rightGrid ul li {
   position: relative;
@@ -484,9 +487,9 @@ nav{
 .projects .tab-content img {
   width: 100%;
   border-radius: 10px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.projects .tab-content img:hover, .leftGrid img:hover{
+.projects .tab-content img:hover {
   transform: translateY(-10px);
 }
 .projects .tab-content h3 {
