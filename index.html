@@ -118,10 +118,18 @@
           </div>
           <!-- dark light theme -->
           <div class="theme">
-            <div class="container"></div>
+            <div class="container">
+              <div class="mx-auto py-3">
+                <button onclick="darktheme()" class="btn" id="switchButton" >
+                  <i class="far fa-moon"></i>
+                  <i class="far fa-sun"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
+      
     </header>
     <!-- carousel -->
     <section class="carousel__container">
@@ -765,6 +773,10 @@
       </div>
       </div>
     </section>
+    <!-- backtotop -->
+    <a href="#" class="cd-top text-replace js-cd-top"><button onclick="topFunction()" id="backtotop">
+      <span class="fa fa-angle-up"></span>
+    </button></a>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -819,6 +831,7 @@
         time: 1500,
         delay: 50,
       });
+    </script>
     <script>
       var isClicked = false;
       var Nhap = document.querySelector("#demo");
@@ -828,5 +841,7 @@
         themClass.classList.toggle("active", isClicked);
       };
     </script>
+    <script src="./back-to-top-master/main.js"></script>
+    <script src="./dark-light-theme/main.js"></script>
   </body>
 </html>

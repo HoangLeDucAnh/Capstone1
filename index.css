@@ -77,8 +77,8 @@ nav{
   line-height: 38px;
   border-radius: 50px;
   text-align: center;
-  border: 1px solid ;
   margin: 0 10px;
+  background: #F7F9FC;
 }
 .header__button a{
   font-weight: 700;
@@ -93,7 +93,6 @@ nav{
   background: #dc4f72;
   height: 2px;
   bottom: 13px;
-  left: 8px;
   transition: all .5s;
 }
 .navbar-collapse li.nav-item:hover::before{
@@ -161,6 +160,41 @@ nav{
   text-decoration: none;
   color: white;
   opacity: 0.7;
+}
+/* light theme */
+.mx-auto button{
+  width: 24px;
+  height: 24px;
+}
+body{
+  background-color: white;
+}
+#switchButton {
+  background-color: white;
+}
+#switchButton .fa-sun {
+  display: none;
+  font-size: 24px;
+}
+#switchButton .fa-moon {
+  display: block;
+  font-size: 24px;
+}
+/* dark theme */
+.dark body{
+  background-color: black !important;
+}
+.dark #switchButton {
+  background-color: black !important;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+  font-size: 24px;
+}
+.dark #switchButton .fa-moon {
+  display: none;
+  font-size: 24px;
 }
 /* carousel */
 .carousel__container{
@@ -686,4 +720,27 @@ nav{
 .rightBar .rightBar__bottom a:hover {
   opacity: 1;
   color: #fff;
+}
+/* backtotop */
+#backtotop{
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 50px;
+  height: 45px;
+  background: #dc4f72;
+  border-color: #dc4f72  ;
+  padding: 0;
+  opacity: 0.7;
+  transition: .3s ease;
+  z-index: 99;
+}
+#backtotop span{
+  line-height: 45px;
+  font-size: 22px;
+  color: white;
 }
