@@ -8,7 +8,7 @@
 }
 /* header */
 header {
-  background-color: white !important;
+  background-color: white;
   transition: all 0.4s;
   height: 90px;
   display: flex;
@@ -161,45 +161,12 @@ nav {
   color: white;
   opacity: 0.7;
 }
-/* light theme */
-.mx-auto button {
-  width: 24px;
-  height: 24px;
-}
-body {
-  background-color: white;
-}
-#switchButton {
-  background-color: white;
-}
-#switchButton .fa-sun {
-  display: none;
-  font-size: 24px;
-}
-#switchButton .fa-moon {
-  display: block;
-  font-size: 24px;
-}
-/* dark theme */
-.dark body {
-  background-color: black !important;
-}
-.dark #switchButton {
-  background-color: black !important;
-}
-.dark #switchButton .fa-sun {
-  display: block;
-  color: white;
-  font-size: 24px;
-}
-.dark #switchButton .fa-moon {
-  display: none;
-  font-size: 24px;
-}
+/* dark mode */
+
 /* carousel */
 .carousel__container {
   width: 100%;
-  margin: 0;
+  /* margin: 0; */
   align-items: center;
   padding-top: 11.5rem;
   background: linear-gradient(to right, white, rgba(255, 255, 255, 0.92)),
