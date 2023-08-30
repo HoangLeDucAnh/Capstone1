@@ -46,7 +46,7 @@
     <!-- my css -->
     <link rel="stylesheet" href="./index.css" />
   </head>
-  <body>
+  <body class="dark">
     <!-- header -->
     <header>
       <div class="container header__container">
@@ -116,22 +116,15 @@
               >SCHEDULE A DEMO</a
             >
           </div>
-          <!-- dark light theme -->
-          <div class="theme">
-            <div class="container">
-              <div class="mx-auto py-3">
-                <button onclick="darktheme()" class="btn" id="switchButton">
-                  <i class="far fa-moon"></i>
-                  <i class="far fa-sun"></i>
-                </button>
-              </div>
-            </div>
+          <!-- dark mode -->
+          <div class="button" id="switch-mode">
+            <i class="fa fa-moon"></i>
           </div>
         </nav>
       </div>
     </header>
     <!-- carousel -->
-    <section class="container carousel__container">
+    <section class="carousel__container">
       <div class="content">
         <div class="col-lg-6 content__left" style="width: 50%">
           <h3>We Execute Our Ideas From Start to Finish</h3>
